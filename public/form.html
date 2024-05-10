@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signup Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+    .container {
+        width: 50%;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        text-align: center;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .form-group label {
+        display: block;
+        font-weight: bold;
+    }
+    .form-group input, .form-group select {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        resize: none;
+    }
+    .form-group button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .form-group button:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>Signup Form</h2>
+    <form action="/post" method="post">
+        <div class="form-group">
+            <label for="FirstName">First Name</label>
+            <input type="text" id="FirstName" name="FirstName" required>
+        </div>
+        <div class="form-group">
+            <label for="LastName">Last Name</label>
+            <input type="text" id="LastName" name="LastName" required>
+        </div>
+        <div class="form-group">
+            <label for="Gender">Gender</label>
+            <select id="Gender" name="Gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="VehicleManufacturerAndModel">Vehicle Manufacturer and Model</label>
+            <input type="text" id="VehicleManufacturerAndModel" name="VehicleManufacturerAndModel" required>
+        </div>
+        <div class="form-group">
+            <label for="VehicleYear">Vehicle Year</label>
+            <input type="number" id="VehicleYear" name="VehicleYear" required>
+        </div>
+        <div class="form-group">
+            <label for="VehiclePlateNumber">Vehicle Plate Number</label>
+            <input type="text" id="VehiclePlateNumber" name="VehiclePlateNumber" required>
+        </div>
+            <div class="form-group">
+                <label for="vehicle_color">Vehicle Color</label>
+                <input type="text" id="vehicle_color" name="vehicle_color" required>
+            </div>
+            <div class="form-group">
+                <label for="Nin">NIN (Number)</label>
+                <input type="number" id="Nin" name="Nin" required>
+            </div>
+            <div class="form-group">
+                <label for="FrontViewOfDriverLicense">Front View of Driver's License (Image)</label>
+                <input type="file" id="FrontViewOfDriverLicense" name="FrontViewOfDriverLicense" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="BackViewOfDriversLicense">Back View of Driver's License (Image)</label>
+                <input type="file" id="BackViewOfDriversLicense" name="BackViewOfDriversLicense" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="VehicleFrontView">Vehicle Front View (Image)</label>
+                <input type="file" id="VehicleFrontView" name="VehicleFrontView" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="VehicleBackView">Vehicle Back View (Image)</label>
+                <input type="file" id="VehicleBackView" name="VehicleBackView" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="VehicleLeftView,">Vehicle Left View (Image)</label>
+                <input type="file" id="VehicleLeftView," name="VehicleLeftView", accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="VehicleRightView">Vehicle Right View (Image)</label>
+                <input type="file" id="VehicleRightView" name="VehicleRightView" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="NumberOfSets">Number of Seats</label>
+                <input type="number" id="NumberOfSets" name="NumberOfSets" required>
+            </div>
+            <div class="form-group">
+                <label for="DailyRoute">Daily Route</label>
+                <input type="text" id="DailyRoute" name="DailyRoute" required>
+            </div>
+            <div class="form-group">
+                <label for="PriceOfTripPerPerson">Price of Trip per Person</label>
+                <input type="text" id="PriceOfTripPerPerson" name="PriceOfTripPerPerson" required>
+            </div>
+            <div class="form-group">
+                <label for="NameOfBank">Name of Bank</label>
+                <input type="text" id="NameOfBank" name="NameOfBank" required>
+            </div>
+            <div class="form-group">
+                <label for="AccountName">Account Name</label>
+                <input type="text" id="AccountName" name="AccountName" required>
+            </div>
+            <div class="form-group">
+                <label for="BankAccountNumber">Bank Account Number (Number)</label>
+                <input type="number" id="BankAccountNumber" name="BankAccountNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="PickDayTimeForInterview">Pick a Day and Time for Interview (Date & Time)</label>
+                <input type="datetime-local" id="PickDayTimeForInterview" name="PickDayTimeForInterview" required>
+            </div>
+        <div class="form-group">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
